@@ -1,0 +1,15 @@
+mvn --version
+
+mvn archetype :create  -DgroupId = uab.jeremywork.spark  -DartifactId = jeremywork
+
+mvn archetype:create -DgroupId=uab.jeremywork.spark -DartifactId=jeremywork
+
+-------
+
+mvn archetype:generate -DgroupId=com.jeremywork.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+cd my-app
+
+mvn package
+
+mvn clean dependency:copy-dependencies package

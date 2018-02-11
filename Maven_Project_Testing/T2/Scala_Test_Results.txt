@@ -1,0 +1,516 @@
+[cloudera@quickstart T2]$ mvn archetype:generate \
+>       -DarchetypeGroupId=org.scala-tools.archetypes \
+>       -DarchetypeArtifactId=scala-archetype-simple  \
+>       -DremoteRepositories=http://scala-tools.org/repo-releases \
+>       -DgroupId=org.glassfish.samples \
+>       -DartifactId=scala-helloworld \
+>       -Dversion=1.0-SNAPSHOT
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-archetype-plugin:3.0.1:generate (default-cli) @ standalone-pom >>>
+[INFO] 
+[INFO] <<< maven-archetype-plugin:3.0.1:generate (default-cli) @ standalone-pom <<<
+[INFO] 
+[INFO] --- maven-archetype-plugin:3.0.1:generate (default-cli) @ standalone-pom ---
+[INFO] Generating project in Interactive mode
+[INFO] Archetype [org.scala-tools.archetypes:scala-archetype-simple:1.3] found in catalog remote
+Downloading: http://repo.maven.apache.org/maven2/org/scala-tools/archetypes/scala-archetype-simple/1.3/scala-archetype-simple-1.3.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/scala-tools/archetypes/scala-archetype-simple/1.3/scala-archetype-simple-1.3.pom (5 KB at 19.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/scala-tools/archetypes/scala-archetype-simple/1.3/scala-archetype-simple-1.3.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/scala-tools/archetypes/scala-archetype-simple/1.3/scala-archetype-simple-1.3.jar (6 KB at 18.1 KB/sec)
+[INFO] Using property: groupId = org.glassfish.samples
+[INFO] Using property: artifactId = scala-helloworld
+[INFO] Using property: version = 1.0-SNAPSHOT
+[INFO] Using property: package = org.glassfish.samples
+Confirm properties configuration:
+groupId: org.glassfish.samples
+artifactId: scala-helloworld
+version: 1.0-SNAPSHOT
+package: org.glassfish.samples
+ Y: : y
+[INFO] ----------------------------------------------------------------------------
+[INFO] Using following parameters for creating project from Archetype: scala-archetype-simple:1.3
+[INFO] ----------------------------------------------------------------------------
+[INFO] Parameter: groupId, Value: org.glassfish.samples
+[INFO] Parameter: artifactId, Value: scala-helloworld
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] Parameter: package, Value: org.glassfish.samples
+[INFO] Parameter: packageInPathFormat, Value: org/glassfish/samples
+[INFO] Parameter: package, Value: org.glassfish.samples
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] Parameter: groupId, Value: org.glassfish.samples
+[INFO] Parameter: artifactId, Value: scala-helloworld
+[INFO] Project created from Archetype in dir: /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 30.638s
+[INFO] Finished at: Sun Feb 11 13:41:23 PST 2018
+[INFO] Final Memory: 13M/57M
+[INFO] ------------------------------------------------------------------------
+[cloudera@quickstart T2]$ cd scala-helloworld/
+[cloudera@quickstart scala-helloworld]$ mvn scala:run
+[INFO] Scanning for projects...
+Downloading: http://repo.maven.apache.org/maven2/org/scala-tools/maven-scala-plugin/2.15.0/maven-scala-plugin-2.15.0.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/scala-tools/maven-scala-plugin/2.15.0/maven-scala-plugin-2.15.0.pom (16 KB at 13.5 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/scala-tools/maven-scala-plugin/2.15.0/maven-scala-plugin-2.15.0.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/scala-tools/maven-scala-plugin/2.15.0/maven-scala-plugin-2.15.0.jar (112 KB at 305.1 KB/sec)
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building scala-helloworld 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-scala-plugin:2.15.0:run (default-cli) @ scala-helloworld >>>
+Downloading: http://repo.maven.apache.org/maven2/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0.pom (2 KB at 4.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/junit/junit/4.8.1/junit-4.8.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/junit/junit/4.8.1/junit-4.8.1.pom (949 B at 8.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/scala-tools/testing/specs_2.8.0/1.6.5/specs_2.8.0-1.6.5.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/scala-tools/testing/specs_2.8.0/1.6.5/specs_2.8.0-1.6.5.pom (13 KB at 41.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/scalatest/scalatest/1.2/scalatest-1.2.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/scalatest/scalatest/1.2/scalatest-1.2.pom (2 KB at 4.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0.jar
+Downloading: http://repo.maven.apache.org/maven2/junit/junit/4.8.1/junit-4.8.1.jar
+Downloading: http://repo.maven.apache.org/maven2/org/scala-tools/testing/specs_2.8.0/1.6.5/specs_2.8.0-1.6.5.jar
+Downloading: http://repo.maven.apache.org/maven2/org/scalatest/scalatest/1.2/scalatest-1.2.jar
+Downloaded: http://repo.maven.apache.org/maven2/junit/junit/4.8.1/junit-4.8.1.jar (232 KB at 137.0 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/scalatest/scalatest/1.2/scalatest-1.2.jar (1743 KB at 342.6 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/scala-tools/testing/specs_2.8.0/1.6.5/specs_2.8.0-1.6.5.jar (2786 KB at 401.8 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0.jar (6017 KB at 597.2 KB/sec)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ scala-helloworld ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ scala-helloworld ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-scala-plugin:2.15.0:compile (default) @ scala-helloworld ---
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.pom (2 KB at 21.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.2.1/maven-reporting-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.2.1/maven-reporting-2.2.1.pom (2 KB at 17.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.pom (2 KB at 28.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.1/doxia-1.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.1/doxia-1.1.pom (15 KB at 192.5 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.pom (2 KB at 22.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.0.1/commons-exec-1.0.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.0.1/commons-exec-1.0.1.pom (8 KB at 91.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.4/snakeyaml-1.4.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.4/snakeyaml-1.4.pom (8 KB at 83.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.1/plexus-utils-2.0.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.1/plexus-utils-2.0.1.pom (4 KB at 48.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-core-asl/1.6.1/jackson-core-asl-1.6.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-core-asl/1.6.1/jackson-core-asl-1.6.1.pom (1016 B at 13.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.6.1/jackson-mapper-asl-1.6.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.6.1/jackson-mapper-asl-1.6.1.pom (2 KB at 16.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.jar
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar
+Downloading: http://repo.maven.apache.org/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar
+Downloading: http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar (50 KB at 215.3 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar (22 KB at 73.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.0.1/commons-exec-1.0.1.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar (12 KB at 30.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.4/snakeyaml-1.4.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.jar (10 KB at 25.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.1/plexus-utils-2.0.1.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar (17 KB at 75.3 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-core-asl/1.6.1/jackson-core-asl-1.6.1.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar (9 KB at 17.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.6.1/jackson-mapper-asl-1.6.1.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.0.1/commons-exec-1.0.1.jar (49 KB at 55.4 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.1/plexus-utils-2.0.1.jar (217 KB at 218.9 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.4/snakeyaml-1.4.jar (213 KB at 202.3 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-core-asl/1.6.1/jackson-core-asl-1.6.1.jar (197 KB at 200.9 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.6.1/jackson-mapper-asl-1.6.1.jar (530 KB at 460.1 KB/sec)
+[INFO] Checking for multiple versions of scala
+[INFO] includes = [**/*.scala,**/*.java,]
+[INFO] excludes = []
+[INFO] /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/src/main/scala:-1: info: compiling
+[INFO] Compiling 1 source files to /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/target/classes at 1518385799082
+Downloading: http://repo.maven.apache.org/maven2/org/scala-lang/scala-compiler/2.8.0/scala-compiler-2.8.0.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/scala-lang/scala-compiler/2.8.0/scala-compiler-2.8.0.jar (8469 KB at 1103.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/scala-lang/scala-compiler/2.8.0/scala-compiler-2.8.0.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/scala-lang/scala-compiler/2.8.0/scala-compiler-2.8.0.pom (2 KB at 6.3 KB/sec)
+[INFO] No known dependencies. Compiling everything
+[INFO] prepare-compile in 0 s
+[INFO] compile in 50 s
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ scala-helloworld ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ scala-helloworld ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-scala-plugin:2.15.0:testCompile (default) @ scala-helloworld ---
+[INFO] Checking for multiple versions of scala
+[INFO] includes = [**/*.scala,**/*.java,]
+[INFO] excludes = []
+[INFO] /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/src/test/scala:-1: info: compiling
+[INFO] Compiling 3 source files to /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/target/test-classes at 1518385849321
+[INFO] No known dependencies. Compiling everything
+[INFO] prepare-compile in 0 s
+[INFO] compile in 81 s
+[INFO] 
+[INFO] <<< maven-scala-plugin:2.15.0:run (default-cli) @ scala-helloworld <<<
+[INFO] 
+[INFO] --- maven-scala-plugin:2.15.0:run (default-cli) @ scala-helloworld ---
+[INFO] Checking for multiple versions of scala
+[WARNING] Not mainClass or valid launcher found/define
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2:40.377s
+[INFO] Finished at: Sun Feb 11 13:52:11 PST 2018
+[INFO] Final Memory: 9M/57M
+[INFO] ------------------------------------------------------------------------
+[cloudera@quickstart scala-helloworld]$ mvn test
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building scala-helloworld 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.6/maven-surefire-plugin-2.6.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.6/maven-surefire-plugin-2.6.pom (10 KB at 9.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.6/surefire-2.6.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.6/surefire-2.6.pom (9 KB at 90.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.6/maven-surefire-plugin-2.6.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.6/maven-surefire-plugin-2.6.jar (28 KB at 116.0 KB/sec)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ scala-helloworld ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ scala-helloworld ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-scala-plugin:2.15.0:compile (default) @ scala-helloworld ---
+[INFO] Checking for multiple versions of scala
+[INFO] includes = [**/*.scala,**/*.java,]
+[INFO] excludes = []
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ scala-helloworld ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ scala-helloworld ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-scala-plugin:2.15.0:testCompile (default) @ scala-helloworld ---
+[INFO] Checking for multiple versions of scala
+[INFO] includes = [**/*.scala,**/*.java,]
+[INFO] excludes = []
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ scala-helloworld ---
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.6/surefire-booter-2.6.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.6/surefire-booter-2.6.pom (2 KB at 22.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.6/surefire-api-2.6.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.6/surefire-api-2.6.pom (3 KB at 20.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.6/maven-surefire-common-2.6.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.6/maven-surefire-common-2.6.pom (4 KB at 46.5 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.2/maven-common-artifact-filters-1.2.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.2/maven-common-artifact-filters-1.2.pom (5 KB at 28.5 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/11/maven-shared-components-11.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/11/maven-shared-components-11.pom (9 KB at 66.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.6/surefire-booter-2.6.jar
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.6/maven-surefire-common-2.6.jar
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.6/surefire-api-2.6.jar
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.2/maven-common-artifact-filters-1.2.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.6/maven-surefire-common-2.6.jar (22 KB at 39.0 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.2/maven-common-artifact-filters-1.2.jar (31 KB at 37.6 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.6/surefire-booter-2.6.jar (271 KB at 177.7 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.6/surefire-api-2.6.jar (519 KB at 288.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.6/surefire-junit4-2.6.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.6/surefire-junit4-2.6.pom (2 KB at 21.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.6/surefire-providers-2.6.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.6/surefire-providers-2.6.pom (2 KB at 9.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.6/surefire-junit4-2.6.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.6/surefire-junit4-2.6.jar (12 KB at 50.5 KB/sec)
+[INFO] Surefire report directory: /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running samples.ListSuite
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.449 sec
+Running samples.StackSuite
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.177 sec
+Running samples.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running samples.MySpecTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 1.388 sec
+
+Results :
+
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 2
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 27.671s
+[INFO] Finished at: Sun Feb 11 13:59:57 PST 2018
+[INFO] Final Memory: 9M/57M
+[INFO] ------------------------------------------------------------------------
+[cloudera@quickstart scala-helloworld]$ mvn test-compile
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building scala-helloworld 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ scala-helloworld ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ scala-helloworld ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-scala-plugin:2.15.0:compile (default) @ scala-helloworld ---
+[INFO] Checking for multiple versions of scala
+[INFO] includes = [**/*.scala,**/*.java,]
+[INFO] excludes = []
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ scala-helloworld ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ scala-helloworld ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-scala-plugin:2.15.0:testCompile (default) @ scala-helloworld ---
+[INFO] Checking for multiple versions of scala
+[INFO] includes = [**/*.scala,**/*.java,]
+[INFO] excludes = []
+[INFO] Nothing to compile - all classes are up to date
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 13.170s
+[INFO] Finished at: Sun Feb 11 14:01:03 PST 2018
+[INFO] Final Memory: 8M/57M
+[INFO] ------------------------------------------------------------------------
+[cloudera@quickstart scala-helloworld]$ mvn package
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building scala-helloworld 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ scala-helloworld ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ scala-helloworld ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-scala-plugin:2.15.0:compile (default) @ scala-helloworld ---
+[INFO] Checking for multiple versions of scala
+[INFO] includes = [**/*.scala,**/*.java,]
+[INFO] excludes = []
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ scala-helloworld ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ scala-helloworld ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-scala-plugin:2.15.0:testCompile (default) @ scala-helloworld ---
+[INFO] Checking for multiple versions of scala
+[INFO] includes = [**/*.scala,**/*.java,]
+[INFO] excludes = []
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ scala-helloworld ---
+[INFO] Surefire report directory: /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running samples.ListSuite
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.057 sec
+Running samples.StackSuite
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.222 sec
+Running samples.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running samples.MySpecTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 1.415 sec
+
+Results :
+
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 2
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.2:jar (default-jar) @ scala-helloworld ---
+[INFO] Building jar: /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/target/scala-helloworld-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 27.685s
+[INFO] Finished at: Sun Feb 11 14:02:39 PST 2018
+[INFO] Final Memory: 9M/57M
+[INFO] ------------------------------------------------------------------------
+[cloudera@quickstart scala-helloworld]$ mvn install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building scala-helloworld 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ scala-helloworld ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ scala-helloworld ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-scala-plugin:2.15.0:compile (default) @ scala-helloworld ---
+[INFO] Checking for multiple versions of scala
+[INFO] includes = [**/*.scala,**/*.java,]
+[INFO] excludes = []
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ scala-helloworld ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ scala-helloworld ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-scala-plugin:2.15.0:testCompile (default) @ scala-helloworld ---
+[INFO] Checking for multiple versions of scala
+[INFO] includes = [**/*.scala,**/*.java,]
+[INFO] excludes = []
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ scala-helloworld ---
+[INFO] Surefire report directory: /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running samples.ListSuite
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.413 sec
+Running samples.StackSuite
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.201 sec
+Running samples.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running samples.MySpecTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 1.276 sec
+
+Results :
+
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 2
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.2:jar (default-jar) @ scala-helloworld ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ scala-helloworld ---
+[INFO] Installing /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/target/scala-helloworld-1.0-SNAPSHOT.jar to /home/cloudera/.m2/repository/org/glassfish/samples/scala-helloworld/1.0-SNAPSHOT/scala-helloworld-1.0-SNAPSHOT.jar
+[INFO] Installing /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/pom.xml to /home/cloudera/.m2/repository/org/glassfish/samples/scala-helloworld/1.0-SNAPSHOT/scala-helloworld-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 22.482s
+[INFO] Finished at: Sun Feb 11 14:03:40 PST 2018
+[INFO] Final Memory: 9M/57M
+[INFO] ------------------------------------------------------------------------
+[cloudera@quickstart scala-helloworld]$ mvn site
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building scala-helloworld 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-site-plugin:3.0:site (default-site) @ scala-helloworld ---
+[WARNING] Report plugin org.apache.maven.plugins:maven-project-info-reports-plugin has an empty version.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[INFO] configuring report plugin org.apache.maven.plugins:maven-project-info-reports-plugin:2.9
+[WARNING] No project URL defined - decoration links will not be relativized!
+[INFO] Rendering site with org.apache.maven.skins:maven-default-skin:jar:1.0 skin.
+[INFO] Generating "Dependencies" report    --- maven-project-info-reports-plugin:2.9
+[WARNING] The repository url 'http://download.java.net/maven/2/' is invalid - Repository 'maven2-repository.dev.java.net' will be blacklisted.
+[ERROR] Unable to determine if resource junit:junit:jar:4.8.1:test exists in http://nexus.scala-tools.org/content/repositories/snapshots
+[ERROR] Unable to determine if resource junit:junit:jar:4.8.1:test exists in http://scala-tools.org/repo-snapshots
+[ERROR] Unable to determine if resource junit:junit:jar:4.8.1:test exists in http://scala-tools.org/repo-releases
+[ERROR] Unable to determine if resource junit:junit:jar:4.8.1:test exists in http://nexus.scala-tools.org/content/repositories/releases
+[ERROR] Unable to determine if resource org.scala-lang:scala-library:jar:2.8.0:compile exists in http://nexus.scala-tools.org/content/repositories/snapshots
+[ERROR] Unable to determine if resource org.scala-lang:scala-library:jar:2.8.0:compile exists in http://scala-tools.org/repo-snapshots
+[ERROR] Unable to determine if resource org.scala-lang:scala-library:jar:2.8.0:compile exists in http://scala-tools.org/repo-releases
+[ERROR] Unable to determine if resource org.scala-lang:scala-library:jar:2.8.0:compile exists in http://nexus.scala-tools.org/content/repositories/releases
+[ERROR] Unable to determine if resource org.scala-tools.testing:specs_2.8.0:jar:1.6.5:test exists in http://nexus.scala-tools.org/content/repositories/snapshots
+[ERROR] Unable to determine if resource org.scala-tools.testing:specs_2.8.0:jar:1.6.5:test exists in http://scala-tools.org/repo-snapshots
+[ERROR] Unable to determine if resource org.scala-tools.testing:specs_2.8.0:jar:1.6.5:test exists in http://scala-tools.org/repo-releases
+[ERROR] Unable to determine if resource org.scala-tools.testing:specs_2.8.0:jar:1.6.5:test exists in http://nexus.scala-tools.org/content/repositories/releases
+[ERROR] Unable to determine if resource org.scalatest:scalatest:jar:1.2:test exists in http://nexus.scala-tools.org/content/repositories/snapshots
+[ERROR] Unable to determine if resource org.scalatest:scalatest:jar:1.2:test exists in http://scala-tools.org/repo-snapshots
+[ERROR] Unable to determine if resource org.scalatest:scalatest:jar:1.2:test exists in http://scala-tools.org/repo-releases
+[ERROR] Unable to determine if resource org.scalatest:scalatest:jar:1.2:test exists in http://nexus.scala-tools.org/content/repositories/releases
+[INFO] Generating "Dependency Convergence" report    --- maven-project-info-reports-plugin:2.9
+[INFO] Generating "Dependency Information" report    --- maven-project-info-reports-plugin:2.9
+[INFO] Generating "About" report    --- maven-project-info-reports-plugin:2.9
+[INFO] Generating "Licenses" report    --- maven-project-info-reports-plugin:2.9
+[INFO] Generating "Plugin Management" report    --- maven-project-info-reports-plugin:2.9
+[INFO] Generating "Plugins" report    --- maven-project-info-reports-plugin:2.9
+[INFO] Generating "Summary" report    --- maven-project-info-reports-plugin:2.9
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1:06.286s
+[INFO] Finished at: Sun Feb 11 14:05:30 PST 2018
+[INFO] Final Memory: 20M/113M
+[INFO] ------------------------------------------------------------------------
+[cloudera@quickstart scala-helloworld]$ mvn compile
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building scala-helloworld 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ scala-helloworld ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/cloudera/Downloads/spark/Maven_Test/T2/scala-helloworld/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ scala-helloworld ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-scala-plugin:2.15.0:compile (default) @ scala-helloworld ---
+[INFO] Checking for multiple versions of scala
+[INFO] includes = [**/*.scala,**/*.java,]
+[INFO] excludes = []
+[INFO] Nothing to compile - all classes are up to date
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 12.750s
+[INFO] Finished at: Sun Feb 11 14:08:08 PST 2018
+[INFO] Final Memory: 8M/57M
+[INFO] ------------------------------------------------------------------------

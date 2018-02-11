@@ -1,0 +1,49 @@
+[cloudera@quickstart Maven_Test]$ mvn --version
+Apache Maven 3.0.4 (r1232337; 2012-01-17 00:44:56-0800)
+Maven home: /usr/local/apache-maven/apache-maven-3.0.4
+Java version: 1.7.0_67, vendor: Oracle Corporation
+Java home: /usr/java/jdk1.7.0_67-cloudera/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "2.6.32-573.el6.x86_64", arch: "amd64", family: "unix"
+[cloudera@quickstart Maven_Test]$ mvn archetype:generate -DgroupId=com.jeremywork.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-archetype-plugin:3.0.1:generate (default-cli) @ standalone-pom >>>
+[INFO] 
+[INFO] <<< maven-archetype-plugin:3.0.1:generate (default-cli) @ standalone-pom <<<
+[INFO] 
+[INFO] --- maven-archetype-plugin:3.0.1:generate (default-cli) @ standalone-pom ---
+[INFO] Generating project in Batch mode
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.0/maven-archetype-quickstart-1.0.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.0/maven-archetype-quickstart-1.0.pom (703 B at 5.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-bundles/2/maven-archetype-bundles-2.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-bundles/2/maven-archetype-bundles-2.pom (2 KB at 16.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/archetype/maven-archetype-parent/1/maven-archetype-parent-1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/archetype/maven-archetype-parent/1/maven-archetype-parent-1.pom (2 KB at 16.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/4/maven-parent-4.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/4/maven-parent-4.pom (10 KB at 95.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/apache/3/apache-3.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/apache/3/apache-3.pom (4 KB at 39.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.0/maven-archetype-quickstart-1.0.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.0/maven-archetype-quickstart-1.0.jar (5 KB at 40.8 KB/sec)
+[INFO] ----------------------------------------------------------------------------
+[INFO] Using following parameters for creating project from Old (1.x) Archetype: maven-archetype-quickstart:1.0
+[INFO] ----------------------------------------------------------------------------
+[INFO] Parameter: groupId, Value: com.jeremywork.app
+[INFO] Parameter: packageName, Value: com.jeremywork.app
+[INFO] Parameter: package, Value: com.jeremywork.app
+[INFO] Parameter: artifactId, Value: my-app
+[INFO] Parameter: basedir, Value: /home/cloudera/Downloads/spark/Scala_Work/ScalaFinal_Test/Maven_Test
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] project created from Old (1.x) Archetype in dir: /home/cloudera/Downloads/spark/Scala_Work/ScalaFinal_Test/Maven_Test/my-app
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 21.374s
+[INFO] Finished at: Sun Feb 04 10:00:34 PST 2018
+[INFO] Final Memory: 13M/57M
+[INFO] ------------------------------------------------------------------------

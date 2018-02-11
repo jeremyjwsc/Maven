@@ -1,0 +1,4 @@
+Bundle-Name: jeremyScala
+Bundle-SymbolicName: 7
+Bundle-Version: 1.0
+Export-Package: 7.api

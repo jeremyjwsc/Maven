@@ -1,0 +1,278 @@
+[cloudera@quickstart T1]$ mvn archetype:generate -DgroupId=com.jeremy.demoapp -DartifactId=jeremyWeb -DarchetypeArtifactId=maven-archetype-webapp
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-archetype-plugin:3.0.1:generate (default-cli) @ standalone-pom >>>
+[INFO] 
+[INFO] <<< maven-archetype-plugin:3.0.1:generate (default-cli) @ standalone-pom <<<
+[INFO] 
+[INFO] --- maven-archetype-plugin:3.0.1:generate (default-cli) @ standalone-pom ---
+[INFO] Generating project in Interactive mode
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-webapp/1.0/maven-archetype-webapp-1.0.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-webapp/1.0/maven-archetype-webapp-1.0.pom (533 B at 3.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-webapp/1.0/maven-archetype-webapp-1.0.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-webapp/1.0/maven-archetype-webapp-1.0.jar (4 KB at 30.4 KB/sec)
+[INFO] Using property: groupId = com.jeremy.demoapp
+[INFO] Using property: artifactId = jeremyWeb
+Define value for property 'version' 1.0-SNAPSHOT: : 1.0    
+[INFO] Using property: package = com.jeremy.demoapp
+Confirm properties configuration:
+groupId: com.jeremy.demoapp
+artifactId: jeremyWeb
+version: 1.0
+package: com.jeremy.demoapp
+ Y: : y
+[INFO] ----------------------------------------------------------------------------
+[INFO] Using following parameters for creating project from Old (1.x) Archetype: maven-archetype-webapp:1.0
+[INFO] ----------------------------------------------------------------------------
+[INFO] Parameter: groupId, Value: com.jeremy.demoapp
+[INFO] Parameter: packageName, Value: com.jeremy.demoapp
+[INFO] Parameter: package, Value: com.jeremy.demoapp
+[INFO] Parameter: artifactId, Value: jeremyWeb
+[INFO] Parameter: basedir, Value: /home/cloudera/Downloads/spark/Maven_Test/T1
+[INFO] Parameter: version, Value: 1.0
+[INFO] project created from Old (1.x) Archetype in dir: /home/cloudera/Downloads/spark/Maven_Test/T1/jeremyWeb
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1:17.877s
+[INFO] Finished at: Sun Feb 11 12:01:02 PST 2018
+[INFO] Final Memory: 13M/57M
+[INFO] ------------------------------------------------------------------------
+[cloudera@quickstart T1]$ cd jeremyWeb/
+[cloudera@quickstart jeremyWeb]$ mvn compile
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jeremyWeb Maven Webapp 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ jeremyWeb ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ jeremyWeb ---
+[INFO] No sources to compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.636s
+[INFO] Finished at: Sun Feb 11 12:02:03 PST 2018
+[INFO] Final Memory: 6M/57M
+[INFO] ------------------------------------------------------------------------
+[cloudera@quickstart jeremyWeb]$ mvn test
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jeremyWeb Maven Webapp 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ jeremyWeb ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ jeremyWeb ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ jeremyWeb ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/cloudera/Downloads/spark/Maven_Test/T1/jeremyWeb/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ jeremyWeb ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ jeremyWeb ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /home/cloudera/Downloads/spark/Maven_Test/T1/jeremyWeb/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.177s
+[INFO] Finished at: Sun Feb 11 12:02:33 PST 2018
+[INFO] Final Memory: 7M/57M
+[INFO] ------------------------------------------------------------------------
+[cloudera@quickstart jeremyWeb]$ mvn package
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jeremyWeb Maven Webapp 1.0
+[INFO] ------------------------------------------------------------------------
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.1.1/maven-war-plugin-2.1.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.1.1/maven-war-plugin-2.1.1.pom (7 KB at 7.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.1.1/maven-war-plugin-2.1.1.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.1.1/maven-war-plugin-2.1.1.jar (76 KB at 225.1 KB/sec)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ jeremyWeb ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ jeremyWeb ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ jeremyWeb ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/cloudera/Downloads/spark/Maven_Test/T1/jeremyWeb/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ jeremyWeb ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ jeremyWeb ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /home/cloudera/Downloads/spark/Maven_Test/T1/jeremyWeb/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-war-plugin:2.1.1:war (default-war) @ jeremyWeb ---
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.4.1/maven-archiver-2.4.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.4.1/maven-archiver-2.4.1.pom (4 KB at 39.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/1.2/plexus-archiver-1.2.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/1.2/plexus-archiver-1.2.pom (2 KB at 24.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/1.0.1/plexus-io-1.0.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/1.0.1/plexus-io-1.0.1.pom (2 KB at 15.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.3.1/xstream-1.3.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.3.1/xstream-1.3.1.pom (12 KB at 108.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream-parent/1.3.1/xstream-parent-1.3.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream-parent/1.3.1/xstream-parent-1.3.1.pom (14 KB at 140.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.pom
+Downloaded: http://repo.maven.apache.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.pom (2 KB at 19.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.0-beta-2/maven-filtering-1.0-beta-2.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.0-beta-2/maven-filtering-1.0-beta-2.pom (4 KB at 35.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.6/plexus-interpolation-1.6.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.6/plexus-interpolation-1.6.pom (3 KB at 33.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.4.1/maven-archiver-2.4.1.jar
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/1.2/plexus-archiver-1.2.jar
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/1.0.1/plexus-io-1.0.1.jar
+Downloading: http://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.3.1/xstream-1.3.1.jar
+Downloading: http://repo.maven.apache.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.4.1/maven-archiver-2.4.1.jar (20 KB at 81.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.0-beta-2/maven-filtering-1.0-beta-2.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.0-beta-2/maven-filtering-1.0-beta-2.jar (33 KB at 75.5 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/1.0.1/plexus-io-1.0.1.jar (50 KB at 72.7 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar (25 KB at 32.5 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/1.2/plexus-archiver-1.2.jar (178 KB at 177.6 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.3.1/xstream-1.3.1.jar (422 KB at 322.3 KB/sec)
+[INFO] Packaging webapp
+[INFO] Assembling webapp [jeremyWeb] in [/home/cloudera/Downloads/spark/Maven_Test/T1/jeremyWeb/target/jeremyWeb]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/cloudera/Downloads/spark/Maven_Test/T1/jeremyWeb/src/main/webapp]
+[INFO] Webapp assembled in [129 msecs]
+[INFO] Building war: /home/cloudera/Downloads/spark/Maven_Test/T1/jeremyWeb/target/jeremyWeb.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 18.898s
+[INFO] Finished at: Sun Feb 11 12:03:16 PST 2018
+[INFO] Final Memory: 9M/57M
+[INFO] ------------------------------------------------------------------------
+[cloudera@quickstart jeremyWeb]$ 
+[cloudera@quickstart jeremyWeb]$ mvn install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jeremyWeb Maven Webapp 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ jeremyWeb ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ jeremyWeb ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ jeremyWeb ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/cloudera/Downloads/spark/Maven_Test/T1/jeremyWeb/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ jeremyWeb ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ jeremyWeb ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /home/cloudera/Downloads/spark/Maven_Test/T1/jeremyWeb/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-war-plugin:2.1.1:war (default-war) @ jeremyWeb ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [jeremyWeb] in [/home/cloudera/Downloads/spark/Maven_Test/T1/jeremyWeb/target/jeremyWeb]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/cloudera/Downloads/spark/Maven_Test/T1/jeremyWeb/src/main/webapp]
+[INFO] Webapp assembled in [179 msecs]
+[INFO] Building war: /home/cloudera/Downloads/spark/Maven_Test/T1/jeremyWeb/target/jeremyWeb.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ jeremyWeb ---
+[INFO] Installing /home/cloudera/Downloads/spark/Maven_Test/T1/jeremyWeb/target/jeremyWeb.war to /home/cloudera/.m2/repository/com/jeremy/demoapp/jeremyWeb/1.0/jeremyWeb-1.0.war
+[INFO] Installing /home/cloudera/Downloads/spark/Maven_Test/T1/jeremyWeb/pom.xml to /home/cloudera/.m2/repository/com/jeremy/demoapp/jeremyWeb/1.0/jeremyWeb-1.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 14.713s
+[INFO] Finished at: Sun Feb 11 12:05:40 PST 2018
+[INFO] Final Memory: 9M/57M
+[INFO] ------------------------------------------------------------------------
+[cloudera@quickstart jeremyWeb]$ mvn site
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jeremyWeb Maven Webapp 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-site-plugin:3.0:site (default-site) @ jeremyWeb ---
+[WARNING] Report plugin org.apache.maven.plugins:maven-project-info-reports-plugin has an empty version.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[INFO] configuring report plugin org.apache.maven.plugins:maven-project-info-reports-plugin:2.9
+[INFO] Relativizing decoration links with respect to project URL: http://maven.apache.org
+[INFO] Rendering site with org.apache.maven.skins:maven-default-skin:jar:1.0 skin.
+[INFO] Generating "Dependencies" report    --- maven-project-info-reports-plugin:2.9
+[INFO] Generating "Dependency Convergence" report    --- maven-project-info-reports-plugin:2.9
+[INFO] Generating "Dependency Information" report    --- maven-project-info-reports-plugin:2.9
+[INFO] Generating "About" report    --- maven-project-info-reports-plugin:2.9
+[INFO] Generating "Plugin Management" report    --- maven-project-info-reports-plugin:2.9
+[INFO] Generating "Plugins" report    --- maven-project-info-reports-plugin:2.9
+[INFO] Generating "Summary" report    --- maven-project-info-reports-plugin:2.9
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 36.638s
+[INFO] Finished at: Sun Feb 11 12:07:39 PST 2018
+[INFO] Final Memory: 14M/57M
+[INFO] ------------------------------------------------------------------------
+[cloudera@quickstart jeremyWeb]$ 

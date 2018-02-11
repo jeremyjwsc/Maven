@@ -1,0 +1,18 @@
+mvn -B archetype:generate \
+       -DarchetypeGroupId=org.apache.maven.archetypes \
+       -DgroupId=com.mycompany.app \
+       -DartifactId=my-app
+
+cd my-app
+
+mvn compile
+
+mvn test 
+
+mvn test-compile
+
+mvn package
+
+mvn install
+
+mvn site
